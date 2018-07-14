@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="title">
+            <div class = "main" >
+            <img alt="udacity logo" id="logo" src="img/logo.png">
+            <div id="data">
+                <h1>Ranjitha Mohan</h1>
+                <h3>Front-End Development trainee</h3>
+            </div>
+            </div>
+            <div id = "details">
+               <div id = "map" role = "application">
+               </div>
+               <div>
+                <h3><span class ="d1">From       : </span>                Chennai<br>
+                   <span class ="d1"> Studied At :</span>          PSG college of technology<br>
+                    <span class ="d1">Age        :</span>                21<br>
+                    <span class ="d1">Languages  :</span>          Tamil,English<br>
+                    <span class ="d1">Contact    : </span>            9047162261<br>
+                    <span class ="d1">Email      :</span>              ranji21597@gmail.com<br>
+                    
+                </h3>
+               <a href = "projects.html"><button >View Projects</button> </a></div>
+            </div> 
+        </div>
+    </section>
+    <script>
+      var map;
+      function initMap() {
+        // Constructor creates a new map - only center and zoom are required.
+        map = new google.maps.Map(document.getElementById('map'), {
+
+          center: {lat: 40.7413549, lng: -73.9980244},
+          zoom: 13
+        });
+        console.log("hiiiii");
+        var tribeca = {lat: 40.719526, lng: -74.0089934};
+        var marker = new google.maps.Marker({
+          position: tribeca,
+          map: map,
+          title: 'First Marker!'
+        });
+      }
+    </script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrOcU7ykHU1rWiGXUe871FeKpjdjz3SzM&v=3&callback=initMap"></script>
+    <footer id ="foo">
+        <p>Posted by: Ranjitha Mohan</p>
+    </footer>
+</body>
+
+</html>
